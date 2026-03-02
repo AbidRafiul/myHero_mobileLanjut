@@ -11,14 +11,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.lifecycleScope
 import com.abid.myapplication.ui.theme.MyApplicationTheme
-import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 
 class MainActivity : ComponentActivity() {
@@ -64,7 +60,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    
+
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
